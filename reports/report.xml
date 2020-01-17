@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <report
+        id="report_ordenador"
+        string="Imprimir Ordenador"
+        model="fabrica.ordenador"
+        report_type="qweb-pdf"
+        name="Fabrica.report_orde"
+        file="Fabrica.report_orde"   />
+
+
+</odoo>

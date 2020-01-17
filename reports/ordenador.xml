@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <template id="report_orde">
+       <t t-call="web.html_container">
+           <t t-foreach="docs" t-as="doc">
+			<t t-call="web.external_layout">
+				<h2>Codigo</h2>
+				<t t-esc="doc.codigo"/><br></br>
+				<h2>Modelo</h2>
+				<t t-esc="doc.modelo"/><br></br>
+				<h2>Precio</h2>
+				<t t-esc="doc.precio"/><br></br>
+				<h2>CodigoProcesador</h2>
+				<t t-esc="doc.codProcesador"/><br></br>
+				<h2>CodigoPlacaBase</h2><br></br>
+				<t t-esc="doc.codPlacaBase"/>
+			</t>
+           </t>
+       </t>
+   </template>
+
+
+</odoo>
